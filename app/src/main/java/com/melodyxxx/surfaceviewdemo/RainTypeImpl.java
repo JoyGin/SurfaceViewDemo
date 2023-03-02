@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
-
 import java.util.ArrayList;
 
 /**
@@ -40,7 +39,8 @@ public class RainTypeImpl extends BaseType {
 
     @Override
     public void generate() {
-        mBackground = getContext().getResources().getDrawable(R.drawable.rain_sky_night);
+//        mBackground = getContext().getResources().getDrawable(R.drawable.rain_sky_night);
+        mBackground = getContext().getResources().getDrawable(R.mipmap.ic_launcher);
         mBackground.setBounds(0, 0, getWidth(), getHeight());
         for (int i = 0; i < 60; i++) {
             RainHolder rain = new RainHolder(
